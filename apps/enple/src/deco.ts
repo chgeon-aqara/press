@@ -9,7 +9,6 @@ export namespace deco {
                 .flex()
                 .add( {
                     flexDirection: 'column',
-                    border: '1px solid red',
                     background: `radial-gradient(
                         rgba(85, 25, 65, 0.5),
                         rgba(255, 255, 255, 0)

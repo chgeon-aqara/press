@@ -54,7 +54,7 @@ export default class Earth extends THREE.Group {
       side: THREE.DoubleSide,
     });
   
-    const planeGeometry = new THREE.PlaneGeometry(20, 20);
+    const planeGeometry = new THREE.PlaneGeometry(15, 15);
     const plane = new THREE.Mesh(planeGeometry, material);
   
     plane.rotateX(-Math.PI / 2); // 평면을 수평으로 회전
