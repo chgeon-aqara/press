@@ -20,7 +20,7 @@ const EarthScene = () => {
     // Scene, Camera, Renderer 생성
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(40, (width + 40) / height, 0.5, 2000);
-    const renderer = new THREE.WebGLRenderer({ alpha: true });
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
 
     renderer.setSize(width, height);
     container.appendChild(renderer.domElement);
