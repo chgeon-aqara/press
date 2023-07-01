@@ -1,0 +1,31 @@
+{
+  "name": "press",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "",
+    "build": "next build apps/enple",
+    "start": "next start apps/enple",
+    "dev": "next dev apps/enple"
+  },
+  "dependencies": {
+    "@types/node": "20.3.2",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "babel-preset-es2015": "^6.24.1",
+    "express": "^4.18.2",
+    "mapbox-gl": "^2.15.0",
+    "next": "13.4.7",
+    "next-transpile-modules": "^10.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "three": "^0.154.0",
+    "three-globe": "^2.27.4",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^2.7.11",
+    "@types/three": "^0.152.1",
+    "ts-loader": "^9.4.4"
+  }
+}
