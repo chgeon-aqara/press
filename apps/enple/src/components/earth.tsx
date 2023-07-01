@@ -24,7 +24,7 @@ export default class Earth extends THREE.Group {
   }
 
   public update = (): void => {
-    this.world.rotation.y += 0.001
+    this.world.rotation.y += 0.005
   }
 
   private createCountryPoints(): void {
@@ -38,7 +38,7 @@ export default class Earth extends THREE.Group {
       this.createFlagOnGround(point)
       this.setPointPos(point, latitude, longitude)
 
-      this.countryPoints.push(point) //マウスとの交差を調べたいものは配列に格納
+      this.countryPoints.push(point)
       this.world.add(point)
     })
 
@@ -54,7 +54,7 @@ export default class Earth extends THREE.Group {
       side: THREE.DoubleSide,
     });
   
-    const planeGeometry = new THREE.PlaneGeometry(10, 10);
+    const planeGeometry = new THREE.PlaneGeometry(20, 20);
     const plane = new THREE.Mesh(planeGeometry, material);
   
     plane.rotateX(-Math.PI / 2); // 평면을 수평으로 회전
