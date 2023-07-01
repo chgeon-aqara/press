@@ -19,7 +19,7 @@ export namespace deco {
             head: press.style.relative().flex()
                 .add( { 
                     cursor: 'pointer',        
-                    marginLeft: -20
+                    marginLeft: 0
                 } ),
 
             desc: press.style.relative()
