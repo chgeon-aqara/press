@@ -46,7 +46,7 @@ export default class Earth extends THREE.Group {
   }
 
   private createFlagOnGround(point: THREE.Group): void {
-    const texture = new THREE.TextureLoader().load(`/images/test.jpeg`);
+    const texture = new THREE.TextureLoader().load(`/images/images.jpeg`);
     const material = new THREE.MeshBasicMaterial({
       map: texture,
       transparent: true,
