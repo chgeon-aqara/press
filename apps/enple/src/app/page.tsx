@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { deco } from "../deco";
-import EarthScene from '../components/earthScene';
+import EarthScene from '../components/earth';
 
 export default function Landing() {
 
@@ -20,7 +20,7 @@ export default function Landing() {
             <div style={ styles.desc }>
                 Embark on a global journey, capturing memories, one snapshot at a time. Uncover the world's most cherished places, through the lens of those who love them
             </div>                
-            <div>
+            <div style={ { width:'100%'}}>
                 <EarthScene />
             </div>            
         </div>

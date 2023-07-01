@@ -6,11 +6,11 @@ export namespace deco {
         return {
             wrap: press.style.relative()
                 .block( '100vw', '100vh' )
-                .flex()
+                .flex(undefined, 'center')
                 .add( {
                     flexDirection: 'column',
                     background: `radial-gradient(
-                        rgba(85, 25, 65, 0.5),
+                        rgba(35, 155, 105, 0.3),
                         rgba(255, 255, 255, 0)
                     )`
                 }),
@@ -18,11 +18,12 @@ export namespace deco {
             head: press.style.relative().flex()
                 .add( { 
                     cursor: 'pointer',        
-                    marginLeft: 0
+                    marginLeft: -100
                 } ),
 
             desc: press.style.relative()
                 .add( { 
+                    maxWidth: 430,
                     fontSize: 12,
                     margin: '0px 12px 70px'
                 } )
